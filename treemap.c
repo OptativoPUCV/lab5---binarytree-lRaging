@@ -71,7 +71,7 @@ padre->left = nuevoNodo;
 tree->current=nuevoNodo;
 }
   
-}
+
 
 TreeNode * minimum(TreeNode * x){
 return NULL;
