@@ -74,7 +74,7 @@ tree->current=nuevoNodo;
 }
 
 TreeNode * minimum(TreeNode * x){
-
+return NULL;
 }
 
 
