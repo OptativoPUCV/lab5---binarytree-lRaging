@@ -42,7 +42,7 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
   localTreeMap->lower_than = lower_than;
   localTreeMap->current = NULL;
   localTreeMap->root = NULL;
-  return NULL;
+  return localTreeMap;
 }
 
 
