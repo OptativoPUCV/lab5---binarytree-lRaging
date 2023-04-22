@@ -124,8 +124,13 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 }
 
 
-Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+Pair * upperBound(TreeMap * tree, void* key) 
+{
+  if (tree == NULL || tree->root == NULL || key == NULL) return NULL;
+  
+  TreeNode* current = tree->root;
+  TreeNode* nodo_limite_superior = NULL;
+  
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
