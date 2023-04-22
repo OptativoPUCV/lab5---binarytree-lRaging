@@ -180,6 +180,7 @@ Pair * nextTreeMap(TreeMap * tree)
       current = padre;
       padre = padre->parent;
     }
+    return padre->pair;
   }
   
   return NULL;
