@@ -126,18 +126,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) 
 {
-
-else
-{
-if (tree->lower_than(tree->current->pair->key,key) == 1)
-tree->current = tree->current->right;
-else
-{
-aux=tree->current;
-tree->current = tree->current->left;
-
-
-
   if (tree == NULL || tree->root == NULL || key == NULL) return NULL;
   
   TreeNode* current = tree->root;
