@@ -142,7 +142,10 @@ Pair * upperBound(TreeMap * tree, void* key)
          {
             nodo_limite_superior = current;
             current = current->left;
-         }
+         } else 
+           {
+              current = current->right;
+           }
     
      return nodo_limite_superior->pair;
   }
