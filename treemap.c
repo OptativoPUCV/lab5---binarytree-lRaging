@@ -130,7 +130,22 @@ Pair * upperBound(TreeMap * tree, void* key)
   
   TreeNode* current = tree->root;
   TreeNode* nodo_limite_superior = NULL;
+
+  while(current != NULL)
+  {
+      int aux = tree->lower_than(current->pair->key, key);
+      if (aux == 0) 
+      {
+          tree->current = current;
+          return current->pair;
+       } else if (aux == 1) 
+      {
+          nodo_limite_superior = current;
+          current = current->left;
+      }
+  }
   
+  return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
