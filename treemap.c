@@ -139,10 +139,12 @@ Pair * upperBound(TreeMap * tree, void* key)
           tree->current = current;
           return current->pair;
        } else if (aux == 1) 
-      {
-          nodo_limite_superior = current;
-          current = current->left;
-      }
+         {
+            nodo_limite_superior = current;
+            current = current->left;
+         }
+    
+     return nodo_limite_superior->pair;
   }
   
   return NULL;
